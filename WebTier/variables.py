@@ -1,0 +1,7 @@
+KEY_FILE = "*"
+ACCESS_KEY = "*"
+SECRET_KEY = "*"
+REGION = "us-east-1"
+INPUT_BUCKET = "*"
+OUTPUT_BUCKET = "*"
+USERNAME = "ubuntu"

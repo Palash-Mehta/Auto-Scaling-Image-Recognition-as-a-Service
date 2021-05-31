@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body {
+        font-family: Arial;
+        margin: 0;
+        background-color: #D3D3D3;
+    }
+    .header{
+        background-color: #000000;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 10px;
+    }
+    .content{
+        margin: 5px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+      <h1>Results</h1>
+    </div>
+    <div class="content">
+        <p> Total results received : {{data_length}} </p>
+        <hr>
+        <table>
+            <tr>
+                <th>(IMAGE, PREDICTION)</th>
+            </tr>
+            {% for ans in data %}
+            <tr>
+                <td> {{ans}} </td>
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
